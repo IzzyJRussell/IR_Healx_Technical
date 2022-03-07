@@ -126,7 +126,7 @@ def main(max_protein_len, keyword, csv_file_path):
     if len(disease_gene_data_df) == 0:
         print('No results unitprot data meets given criteria')
     else:
-        disease_gene_data_df = disease_gene_data_df[(disease_gene_data_df['protein_length'] < args.prot_length) & (disease_gene_data_df[df_keyword] == True)]
+        disease_gene_data_df = disease_gene_data_df[(disease_gene_data_df['protein_length'] < int(args.prot_length)) & (disease_gene_data_df[df_keyword] == True)]
         fname = f'{df_keyword}_max_protein_length_{max_protein_len}_diseases.csv'
         disease_gene_data_df.to_csv(fname, index=False)
         print(f'Wrote {fname} to file with filtered results.')
