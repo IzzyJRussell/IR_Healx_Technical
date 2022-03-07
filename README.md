@@ -11,4 +11,4 @@ specify protein length:
 `python healx_unitprot_mapping.py -f '.\Data Content 2022\healx-test-rare-disease-genes.csv' -p 200`
 
 specify alternative keyword:  
-`python healx_unitprot_mapping.py -f '.\Data Content 2022\healx-test-rare-disease-genes.csv' -k 200`
+`python healx_unitprot_mapping.py -f '.\Data Content 2022\healx-test-rare-disease-genes.csv' -k "Glycoprotein"`
